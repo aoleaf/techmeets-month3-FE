@@ -1,0 +1,125 @@
+/* Week10 用の最小限のスタイル。変数は index.css の :root で定義済み。 */
+
+.app {
+  padding: 32px 16px 64px;
+}
+
+.app-header h1 {
+  color: var(--text-h);
+  line-height: 1.2;
+}
+
+/* ---- フォーム ---- */
+.form {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  margin-bottom: 32px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--social-bg);
+}
+
+.form h2 {
+  margin: 0;
+  font-size: 1.1em;
+  color: var(--text-h);
+}
+
+.field {
+  display: grid;
+  gap: 4px;
+  font-size: 0.85em;
+}
+
+.field input,
+.field select,
+.field textarea {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: 2px solid var(--accent-border);
+  outline-offset: 1px;
+}
+
+.field-error {
+  color: #d93025;
+  font-style: normal;
+  font-size: 0.9em;
+}
+
+.form button {
+  font: inherit;
+  justify-self: start;
+  padding: 8px 20px;
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+  background: var(--accent-bg);
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.form button:disabled {
+  opacity: 0.5;
+  cursor: progress;
+}
+
+/* ---- 一覧 ---- */
+.list {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.card-title {
+  margin: 0 0 6px;
+  color: var(--text-h);
+  font-size: 1.05em;
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 0 0 10px;
+  font-size: 0.8em;
+}
+
+.badge {
+  padding: 2px 10px;
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.card-body {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.state {
+  padding: 24px;
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
+
+.state-error {
+  color: #d93025;
+  border-color: currentColor;
+}
