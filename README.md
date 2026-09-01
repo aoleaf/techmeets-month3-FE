@@ -3,9 +3,9 @@
 Laravel（別リポジトリ）を API 化し、React から `axios` で呼び出して投稿を一覧表示・新規登録する。
 
 - フロントエンド: このリポジトリ（Vite + React）
-- バックエンド: `[laravel-docker-app](https://github.com/aoleaf/techmeets-month2)`（別リポジトリ）
+- バックエンド: [laravel-docker-app](https://github.com/aoleaf/techmeets-month2)（別リポジトリ）
 
-実装手順は [WEEK10_GUIDE.md](WEEK10_GUIDE.md) にまとめてある。
+実装手順は [docs/WEEK10_GUIDE.md](docs/WEEK10_GUIDE.md) にまとめてある。
 
 ---
 
